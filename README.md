@@ -47,7 +47,7 @@
 
 ## How to navigate this project? Click on the link for related source code:
 
-1. A simple [Sanity CMS schema](https://github.com/Griffin1989106/typeEcom/blob/main/cutebuddy/schemas/product.js) is used: add, amend or delete product can be done on the CMS instead of in the source code.
+1. A simple [Sanity CMS schema](https://github.com/guygriffin1989106/typeEcom/blob/main/cutebuddy/schemas/product.js) is used: add, amend or delete product can be done on the CMS instead of in the source code.
 
 2. Click on each `ServicesCard` button will do two things:
 
@@ -60,7 +60,7 @@
 2. set `isClickFromServices` state variable to tru
 3. update filters according to the button that gets clicked on
 
-[Click here](https://github.com/Griffin1989106/typeEcom/blob/main/src/components/Services/ServicesCards.tsx#L21) for the relevant code.
+[Click here](https://github.com/guygriffin1989106/typeEcom/blob/main/src/components/Services/ServicesCards.tsx#L21) for the relevant code.
 
 - Why is there a `isClickFromServices` variable?
   - `ProductsPage` should display products of relevant service if routed from `Services` component.
@@ -68,18 +68,18 @@
   - That means there are two cases for `ProductsPage`:
     - when the component mounts `filters` are cleared.
     - when the component mounts, and it is routed from `Services` component, `filters` should contain a value.
-  - Therefore, an if statement is used to check if the page is routed from `Services`, [click here for the relevant code](https://github.com/Griffin1989106/typeEcom/blob/main/src/pages/ProductsPage.tsx#L10).
+  - Therefore, an if statement is used to check if the page is routed from `Services`, [click here for the relevant code](https://github.com/guygriffin1989106/typeEcom/blob/main/src/pages/ProductsPage.tsx#L10).
 
-3. Shoppers can choose to view the products in `ListView` or `GridView`. [Click here for relevant code](https://github.com/Griffin1989106/typeEcom/blob/main/src/components/ProductList.tsx#L24).
+3. Shoppers can choose to view the products in `ListView` or `GridView`. [Click here for relevant code](https://github.com/guygriffin1989106/typeEcom/blob/main/src/components/ProductList.tsx#L24).
 
 4. Shoppers are able to filter products by different criteria, such as keyword, price, etc.
 
-- [Click here for code structure](https://github.com/Griffin1989106/typeEcom/blob/main/src/components/Filters/Filters.tsx#L22);
-- [Click here for filters updating function](https://github.com/Griffin1989106/typeEcom/blob/main/src/reducers/filter_reducer.ts#L61).
+- [Click here for code structure](https://github.com/guygriffin1989106/typeEcom/blob/main/src/components/Filters/Filters.tsx#L22);
+- [Click here for filters updating function](https://github.com/guygriffin1989106/typeEcom/blob/main/src/reducers/filter_reducer.ts#L61).
 
-5. Products can be sorted by price or name, in ascending or descending order [Click here for sorting function](https://github.com/Griffin1989106/typeEcom/blob/main/src/reducers/filter_reducer.ts#L41).
+5. Products can be sorted by price or name, in ascending or descending order [Click here for sorting function](https://github.com/guygriffin1989106/typeEcom/blob/main/src/reducers/filter_reducer.ts#L41).
 
-6. Payment is processed by Stripe API, [click here for relevant code](https://github.com/Griffin1989106/typeEcom/blob/main/src/components/CheckoutForm.tsx).
+6. Payment is processed by Stripe API, [click here for relevant code](https://github.com/guygriffin1989106/typeEcom/blob/main/src/components/CheckoutForm.tsx).
 
 7. Please note that the newsletter subscription part on `HomePage` does not do anything.
 ## Why did I build the project this way?
@@ -140,7 +140,7 @@ From your command line, first clone this repo:
 
 ```
 # Clone this repository
-$ git clone https://github.com/Griffin1989106/typeEcom.git
+$ git clone https://github.com/guygriffin1989106/typeEcom.git
 
 # Go into the repository
 $ cd typescript-e-commerce
@@ -168,4 +168,4 @@ Happy coding!
 
 **coding-guy**
 
-- [GitHub](https://github.com/Griffin1989106)
+- [GitHub](https://github.com/guygriffin1989106)
